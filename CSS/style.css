@@ -782,7 +782,8 @@ footer {
     }
 
     .step-image {
-        width: 80%;
+        max-width: 50%;
+        width: 100%;
     }
 
     .filter-btns {
