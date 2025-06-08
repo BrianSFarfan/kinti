@@ -24,12 +24,10 @@ body {
     height: 100vh;
     position: relative;
 }
-
 .logo-navbar {
     width: 6vw;
     height: 6vh;
 }
-
 .navbar {
     position: fixed;
     z-index: 100;
