@@ -15,8 +15,9 @@ body {
     background-image: linear-gradient(#20201e, #131111);
     margin: 0 !important;
 }
+
 .tittle-section {
-    background-image: url('./IMG/F1.jpg');
+    background-image: url('IMG/F1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,10 +25,12 @@ body {
     height: 100vh;
     position: relative;
 }
+
 .logo-navbar {
     width: 6vw;
     height: 6vh;
 }
+
 .navbar {
     position: fixed;
     z-index: 100;
@@ -42,7 +45,7 @@ body {
     transition: 0.2s;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
 }
 
@@ -844,6 +847,7 @@ footer {
         align-items: center;
         justify-items: center;
     }
+
     #nosotros .card-row-2:nth-child(1) {
         padding-bottom: 0;
     }
