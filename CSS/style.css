@@ -16,12 +16,12 @@ body {
     margin: 0 !important;
 }
 .tittle-section {
-    background-image: url(/IMG/F1.jpg);
+    background-image: url('./IMG/F1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: calc(100vw, -8px);
-    height: calc(100vh);
+    width: calc(100vw - 8px);
+    height: 100vh;
     position: relative;
 }
 
