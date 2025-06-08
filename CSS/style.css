@@ -17,7 +17,6 @@ body {
 }
 
 .tittle-section {
-    width: calc(100vw - 8px);
     height: 100vh;
     position: relative;
 }
