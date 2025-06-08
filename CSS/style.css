@@ -17,6 +17,7 @@ body {
 }
 
 .tittle-section {
+    width: calc(100vw - 8px);
     height: 100vh;
     position: relative;
 }
@@ -568,6 +569,10 @@ footer {
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1350px) {
+
+    .tittle-section {
+        width: 100vw;
+    }
 
     .btn-wsp-flotante {
         font-size: 12vw;
