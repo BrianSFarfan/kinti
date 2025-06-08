@@ -17,7 +17,6 @@ body {
 }
 
 .tittle-section {
-    background: url('IMG/F1.jpg') center / cover no-repeat;
     width: calc(100vw - 8px);
     height: 100vh;
     position: relative;
