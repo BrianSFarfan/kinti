@@ -40,3 +40,32 @@ document.querySelectorAll('button[id^="actionMenu"]').forEach(button => {
         }
     });
 });
+
+const navLinks = [...document.querySelectorAll('.navbar .btn-nav')]
+  .filter(a => a.hash && document.querySelector(a.hash));
+
+const sections = navLinks.map(a => document.querySelector(a.hash));
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const idx = sections.indexOf(entry.target);
+    if (idx === -1) return;
+
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      navLinks[idx].classList.add('active');
+    }
+  });
+}, { root: null, threshold: 0.6 });
+
+sections.forEach(sec => io.observe(sec));
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+
+    const navbar = document.getElementById('navbar');
+    navbar?.classList.remove('navbar-flex');
+  });
+});

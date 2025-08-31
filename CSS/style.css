@@ -227,7 +227,8 @@ footer {
 
 }
 
-.btn-nav:hover {
+.btn-nav:hover,
+.btn-nav.active {
     border-bottom: 2px solid var(--color-naranja);
 }
 
