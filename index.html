@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="icon" href="/IMG/kc.ico" type="kc-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="AOS/dist/aos.css">
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- NAVBAR -->
     <button id="actionMenu" class="menu-toggle">☰</button>
 
     <nav class="navbar navbar-fixed" id="navbar">
-    <img src="IMG/logoChico.png" class="logo-navbar" alt="logo-kinti-sm">
+        <img src="IMG/logoChico.png" class="logo-navbar" alt="logo-kinti-sm">
         <a class="btn-nav" href="#inicio">Inicio</a>
         <a class="btn-nav" href="#productos-3">Productos</a>
         <a class="btn-nav" href="#nosotros">Nosotros</a>
@@ -27,15 +34,18 @@
     <div id="inicio" class="tittle-section" style="background: url('IMG/F1.jpg') center / cover no-repeat;">
         <div class="card-inicio">
             <div class="logo-row">
-                <img src="IMG/logo.png" alt="logo-kinti" class="logo-inicio">
-                <h2 class="subtittle">Ideal para los amantes del buen café que buscan algo distinto.</h2>
+                <img data-aos="fade-right" data-aos-duration="2000" src="IMG/logo.png" alt="logo-kinti"
+                    class="logo-inicio">
+                <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000" class="subtittle">
+                    Revolucionamos
+                    el café, <br>transformamos el futuro.</h2>
             </div>
             <div class="btns-row">
                 <a class="btn-tittle btn-t-p">Nosotros</a>
                 <a class="btn-tittle btn-t-s">Consultar precios <i style="margin: 0;" class='bx bxl-whatsapp'></i></a>
             </div>
         </div>
-        <div class="redes-sociales">
+        <div data-aos="fade-down" data-aos-duration="3000" class="redes-sociales">
             <i class='bx bxl-whatsapp'></i>
             <i class='bx bxl-instagram'></i>
             <i class='bx bxl-facebook-circle'></i>
@@ -48,23 +58,40 @@
             <div class="tittle-productos">
                 <h2 class="tittle-text">Bienvenido!</h2>
             </div>
-            <p class="text-nosotros">En Kinti Café creemos que cada taza es un viaje. Desde los valles andinos del Perú hasta tu mesa, llevamos lo mejor de la cosecha artesanal, cultivada con pasión y respeto por la tierra.</p>
+            <p class="text-nosotros">En Kinti Café creemos que cada taza es un viaje. Desde los valles andinos del Perú
+                hasta tu mesa, llevamos lo mejor de la cosecha artesanal, cultivada con pasión y respeto por la tierra.
+            </p>
         </div>
         <div class="container-cafes">
             <div class="card-cafe">
-                <img src="IMG/cafe.png" alt="cafe-kinti">
+                <div class="contain-cafe-img">
+                    <img data-aos="fade-down" data-aos-duration="2000" class="art-cafe" src="IMG/FT/FTPNG2.png"
+                        alt="cafe-kinti">
+                    <img data-aos="zoom-in" data-aos-duration="1000" class="art-gn-cafe"
+                        src="IMG/FT/granos_HD_limpios.png" alt="cafe-kinti">
+                </div>
                 <h2>Cafe Aromático</h2>
                 <p>Notas florales y frutales que despiertan los sentidos.</p>
             </div>
             <div class="linea-vertical"></div>
             <div class="card-cafe">
-                <img src="IMG/cafe.png" alt="cafe-kinti">
+                <div class="contain-cafe-img">
+                    <img data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500" class="art-cafe"
+                        src="IMG/FT/FTPNG3.png" alt="cafe-kinti">
+                    <img data-aos="zoom-in" data-aos-duration="1000" class="art-gn-cafe"
+                        src="IMG/FT/granos_HD_limpios.png" alt="cafe-kinti">
+                </div>
                 <h2>Cafe Original</h2>
                 <p>Balance perfecto entre cuerpo y acidez.</p>
             </div>
             <div class="linea-vertical"></div>
             <div class="card-cafe">
-                <img src="IMG/cafe.png" alt="cafe-kinti">
+                <div class="contain-cafe-img">
+                    <img data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="art-cafe"
+                        src="IMG/FT/FTPNG1.png" alt="cafe-kinti">
+                    <img data-aos="zoom-in" data-aos-duration="1000" class="art-gn-cafe"
+                        src="IMG/FT/granos_HD_limpios.png" alt="cafe-kinti">
+                </div>
                 <h2>Cafe Intenso</h2>
                 <p>Fuerza, carácter y sabor profundo para los paladares más exigentes.</p>
             </div>
@@ -130,6 +157,7 @@
                     <button id="filter-coffee" class="selected">Coffee</button>
                     <button id="filter-cafeteras" class="">Cafeteras</button>
                     <button id="filter-packs" class="">Packs</button>
+                    <button id="filter-ps" class="">Productos Sostenibles</button>
                 </div>
             </div>
             <div class="container-filter-coffee">
@@ -214,34 +242,85 @@
                     </div>
                     <img src="IMG/logo (9).jpeg" alt="Paso 1" class="art-image">
                 </div>
+                <!-- COFFEE PS -->
+                <div class="step" id="art-ps">
+                    <div class="art-content">
+                        <p class="step-description">J a b o n
+                            E x f o l i a n t e
+                        </p>
+                        <p class="step-description">
+                            Descubre el poder natural del café en tu piel.
+                            Nuestro jabón artesanal con borra de café exfolia
+                            suavemente, revitaliza y deja tu piel fresca y
+                            luminosa.
+                        </p>
+                    </div>
+                    <img src="IMG/logo (9).jpeg" alt="Paso 1" class="art-image">
+                </div>
+                <div class="step" id="art-ps">
+                    <div class="art-content">
+                        <p class="step-description">A r o m a t i z a d o r S o l i d o
+                        </p>
+                        <p class="step-description">Descubre el poder natural del café en tu piel.
+                            Nuestro jabón artesanal con borra de café exfolia
+                            suavemente, revitaliza y deja tu piel fresca y
+                            luminosa.</p>
+                    </div>
+                    <img src="IMG/logo (9).jpeg" alt="Paso 1" class="art-image">
+                </div>
+                <div class="step" id="art-ps">
+                    <div class="art-content">
+                        <p class="step-description">Pulsera Kafira</p>
+                        <p class="step-description">Es una pulsera artesanal y sostenible
+                            que convierte granos de café ya utilizados en
+                            piezas de joyería únicas.
+                            Cada pulsera es el resultado de un proceso de
+                            revalorización: del café a la bebida, y de la
+                            bebida a una joya.</p>
+                    </div>
+                    <img src="IMG/logo (9).jpeg" alt="Paso 1" class="art-image">
+                </div>
+                <div class="step" id="art-ps">
+                    <div class="art-content">
+                        <p class="step-description">Vela Aromatica</p>
+                        <p class="step-description">El café vive dos veces: una en tu taza, otra en el aire, prueba
+                            nuestras velas hechas a base de borra de café, las cuales
+                            brindan un aroma a vainilla y capuccino.</p>
+                    </div>
+                    <img src="IMG/logo (9).jpeg" alt="Paso 1" class="art-image">
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="whatsapp" class="wsp-card">
+    <div data-aos="fade-down" data-aos-duration="1500" id="whatsapp" class="wsp-card">
         <a href="https://wa.me/+5491138949280" target="_blank">
             <p>Consulta nuestros precios! </p><i class='bx bxl-whatsapp'></i>
         </a>
     </div>
 
     <!-- NOSOTROS -->
-    <div class="">
-        <div id="nosotros" class="card-row-2">
+    <div id="nosotros">
+        <div class="card-row-2">
             <div class="card-col">
                 <h2 class="tittle-nosotros tittle-text">Nosotros</h2>
-                <p class="text-nosotros">Kinti nace con el propósito de llevar el café peruano al mundo. Trabajamos de la mano con comunidades cafetaleras locales, asegurando prácticas sostenibles y comercio justo.
-Nuestra misión es simple: que cada taza te transporte a las montañas del Perú, donde el café se cultiva con amor y se transforma en una experiencia única.</p>
+                <p data-aos="fade-left" data-aos-duration="1000" class="text-nosotros">Kinti nace con el propósito de
+                    llevar el café peruano al mundo. Trabajamos de
+                    la mano con comunidades cafetaleras locales, asegurando prácticas sostenibles y comercio justo.
+                    Nuestra misión es simple: que cada taza te transporte a las montañas del Perú, donde el café se
+                    cultiva con amor y se transforma en una experiencia única.</p>
             </div>
-            <div class="card-col">
-                <img class="img-col" src="IMG/logo (2).jpeg" alt="">
+            <div class="card-col img-50">
+                <img class="img-col " src="IMG/FT/ft15.jpg" alt="">
             </div>
         </div>
         <div class="card-row-2">
-            <div class="card-col">
-                <img class="img-col" src="IMG/logo (9).jpeg" alt="">
+            <div class="card-col img-50">
+                <img class="img-col " src="IMG/FT/ft17.jpg" alt="">
             </div>
             <div class="card-col">
-                <p class="text-nosotros">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <p data-aos="fade-right" data-aos-duration="1000" class="text-nosotros">Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry.
                     Lorem
                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
                     a
@@ -256,15 +335,25 @@ Nuestra misión es simple: que cada taza te transporte a las montañas del Perú
         </div>
     </div>
 
-    <div id="contactos">
-
+    <div data-aos="fade-up" data-aos-duration="1500" id="unete" class="card-unete">
+        <div>
+            <img class="img-kc-footer" src="IMG/logo (9).jpeg" alt="">
+        </div>
+        <div>
+            <p class="text-nosotros">Únete a nuestra revolución del café. Cada Taza que disfrutas, cada producto que
+                eliges, es un paso hacia un futuro más verde.</p>
+            <p class="text-nosotros">¡Juntos hacemos la diferencia!</p>
+        </div>
+        <div>
+            <img class="img-kc-footer" src="IMG/logo (9).jpeg" alt="">
+        </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
         <hr
             style="border: none; height: 3px; background-color: var(--color-marron-claro); width: 90%;border-radius: 50px;opacity: 0.5;">
-        <div class="footer-row">
+        <div class="footer-row" data-aos="fade-up" data-aos-duration="1500" >
             <div class="footer-col">
                 <img src="IMG/logo2.png" alt="logo-kinti-sm" class="logo-footer">
             </div>
@@ -284,10 +373,10 @@ Nuestra misión es simple: que cada taza te transporte a las montañas del Perú
         </div>
         <hr
             style="border: none; height: 3px; background-color: var(--color-marron-claro); width: 80%; border-radius: 50px;opacity: 0.5;">
-
     </footer>
 </body>
 <script src="JS/script.js"></script>
+<script src="AOS/dist/aos.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnc.heyzine.com/release/jquery.pdfflipbook.4.js"></script>
 

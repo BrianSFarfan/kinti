@@ -125,7 +125,7 @@ footer {
     background-attachment: fixed;
     background-repeat: no-repeat;
     backdrop-filter: blur(50px);
-
+    overflow: hidden;
 }
 
 .footer-row {
@@ -172,6 +172,7 @@ footer {
 
 .img-col {
     width: 100%;
+    height: max-content;
     border-radius: 1vw;
 }
 
@@ -534,6 +535,32 @@ footer {
     color: var(--color-blanca);
 }
 
+.card-unete{
+    margin-top: 10vh;
+    background-color: var(--color-verde);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-unete img{
+    width: 50%;
+}
+
+.contain-cafe-img{
+    position: relative;
+}
+.contain-cafe-img img{
+    width: 20vw;
+}
+.contain-cafe-img .art-cafe{
+    position: absolute;
+    z-index: 2;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,1));
+}
+
+
 @keyframes parpadeo {
     0% {
         opacity: 1;
@@ -842,6 +869,10 @@ footer {
         justify-items: center;
     }
 
+    #nosotros{
+        overflow: hidden;
+    }
+
     #nosotros .card-row-2:nth-child(1) {
         padding-bottom: 0;
     }
@@ -851,4 +882,6 @@ footer {
         padding-bottom: 0;
         flex-direction: column-reverse;
     }
+
+
 }
