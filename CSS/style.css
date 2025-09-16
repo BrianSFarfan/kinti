@@ -538,7 +538,8 @@ footer {
 }
 
 .card-unete{
-    margin-top: 10vh;
+    margin-top: 10vh auto;
+    width: 100%;
     background-color: var(--color-verde);
     display: flex;
     justify-content: center;
