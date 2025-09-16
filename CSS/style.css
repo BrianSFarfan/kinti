@@ -424,12 +424,13 @@ footer {
 
 .filter-btns {
     display: flex;
-    justify-content: space-evenly;
+    gap: 1vw;
+    justify-content: space-between;
 }
 
 .filter-btns button {
-    height: 5vh;
-    width: 8vw;
+    height: 7vh;
+    width: 10vw;
     font-size: clamp(1rem, 1.2vw, 2rem);
     border: 0;
     border-radius: 25vw;
@@ -561,6 +562,10 @@ footer {
     filter: drop-shadow(5px 5px 10px rgba(0,0,0,1));
 }
 
+.cursiva{
+    color: #b4733e; 
+    font-style: italic;
+}
 
 @keyframes parpadeo {
     0% {
@@ -681,14 +686,12 @@ footer {
     }
 
     .container-filter-coffee .step {
-        justify-content: start;
-        flex-direction: column-reverse;
-        text-align: center;
+       width: 90vw;
         padding: 0;
     }
 
     .container-filter-coffee .step .art-image {
-        width: 100%;
+        width: 50%;
     }
 
     .logo-navbar {
@@ -751,7 +754,6 @@ footer {
 
     .text-nosotros,
     .card-cafe p,
-    .step-description,
     .col-contactos p {
         font-size: 4vw;
     }
@@ -775,10 +777,15 @@ footer {
         padding: 0;
     }
 
+    .step-description{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
     .container-drip-coffee .step {
         width: 100%;
         margin-bottom: 2vh;
-        padding: 1vw 0;
+        padding: 1vw 0 1vw 1vw;
     }
 
     .container-drip-coffee .step-content {
