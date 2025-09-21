@@ -270,7 +270,7 @@ footer {
 
 .divisor {
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../IMG/F2.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../IMG/F2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -576,16 +576,24 @@ footer {
     font-style: italic;
 }
 
-#macerado {
-    height: 70vh;
-    margin-bottom: 10vh;
+.container-macerado {
+    margin: 5vh 0 0 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/4820817/pexels-photo-4820817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-macerado {
-    width: 55%;
-    margin: auto;
     display: flex;
-    height: 70vh;
+    width: 55%;
+    backdrop-filter: blur(32px);
+    border-radius: 1vw;
+    box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.69);
 }
 
 .step-description-macerado {
@@ -596,10 +604,8 @@ footer {
     flex-direction: column;
     align-self: center;
     padding: 5vw;
-    background-color: var(--color-negro);
-    border-radius: 1vw 0 0 1vw;
     gap: 2vw;
-    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.23);
+    border-right: 0;
 }
 
 .step-description-macerado .cursiva {
@@ -614,6 +620,8 @@ footer {
     z-index: 5;
     border-radius: 1vw;
     box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.23);
+    width: auto;
+    height: 70vh;
 }
 
 .btn-macerado {
@@ -847,8 +855,13 @@ footer {
     }
 
     .step-description {
-        font-size: 3vw;
+        font-size: 4vw;
         padding: 1vw;
+        margin: 0;
+        text-align: center;
+    }
+    .step-description.cursiva {
+         font-size: 4vw;
     }
 
     .container-drip-coffee .step {
@@ -894,8 +907,12 @@ footer {
 
     .filter-btns button {
         width: 80vw;
-        font-size: 4vw;
+        font-size: 3vw;
         height: 6vh;
+    }
+
+    #productos-3 .card-row-2{
+        padding-bottom: 0;
     }
 
     .btn-tittle {
@@ -946,19 +963,38 @@ footer {
         justify-items: center;
     }
 
-    #nosotros {
-        overflow: hidden;
-    }
-
     #nosotros .card-row-2:nth-child(1) {
         padding-bottom: 0;
     }
 
     #nosotros .card-row-2:nth-child(2) {
-        padding-top: 0;
+        padding-top: 5vh;
         padding-bottom: 0;
         flex-direction: column-reverse;
     }
 
+    #unete{
+        margin-top: 5vh;
+    }
 
+    .card-macerado{
+        display: grid;
+        width: 70%;
+    }
+
+    .card-macerado p{
+        font-size: 4vw;
+    }
+    .card-macerado .cursiva{
+        font-size: 8vw;
+    }
+
+    .art-image-macerado {
+        z-index: 5;
+        border-radius: 1vw;
+        box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.23);
+        height: 50vh;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
 }
