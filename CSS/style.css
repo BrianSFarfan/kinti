@@ -372,6 +372,7 @@ footer {
     background-color: var(--color-negro);
     border-radius: 1vw;
     padding-left: 1.5vw;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.23);
 }
 
 .container-filter-coffee .mostrar {
@@ -382,6 +383,7 @@ footer {
     display: grid;
     justify-items: center;
     width: 70%;
+    padding: 1vh 1vw;
 }
 
 .art-image {
@@ -537,8 +539,12 @@ footer {
     color: var(--color-blanca);
 }
 
-.card-unete{
-    margin-top: 10vh auto;
+.card-row-2 {
+    overflow: hidden !important;
+}
+
+.card-unete {
+    margin-top: 10vh;
     width: 100%;
     background-color: var(--color-verde);
     display: flex;
@@ -547,25 +553,87 @@ footer {
     align-items: center;
 }
 
-.card-unete img{
+.card-unete img {
     width: 50%;
 }
 
-.contain-cafe-img{
+.contain-cafe-img {
     position: relative;
 }
-.contain-cafe-img img{
+
+.contain-cafe-img img {
     width: 20vw;
 }
-.contain-cafe-img .art-cafe{
+
+.contain-cafe-img .art-cafe {
     position: absolute;
     z-index: 2;
-    filter: drop-shadow(5px 5px 10px rgba(0,0,0,1));
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 1));
 }
 
-.cursiva{
-    color: #b4733e; 
+.cursiva {
+    color: #b4733e;
     font-style: italic;
+}
+
+#macerado {
+    height: 70vh;
+    margin-bottom: 10vh;
+}
+
+.card-macerado {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    height: 70vh;
+}
+
+.step-description-macerado {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: var(--color-blanca);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 5vw;
+    background-color: var(--color-negro);
+    border-radius: 1vw 0 0 1vw;
+    gap: 2vw;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.23);
+}
+
+.step-description-macerado .cursiva {
+    font-size: 3vw;
+}
+
+.step-description-macerado p {
+    margin: 0;
+}
+
+.art-image-macerado {
+    z-index: 5;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.23);
+}
+
+.btn-macerado {
+    display: flex;
+    justify-content: center;
+    gap: 0.2vw;
+    align-items: center;
+    padding: 1vh 1vw;
+    font-size: clamp(1rem, 1.23vw, 2rem);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: var(--color-verde);
+}
+
+.btn-macerado:hover {
+    filter: brightness(1.23);
+    transform: scale(1.1);
 }
 
 @keyframes parpadeo {
@@ -687,7 +755,7 @@ footer {
     }
 
     .container-filter-coffee .step {
-       width: 90vw;
+        width: 90vw;
         padding: 0;
     }
 
@@ -778,7 +846,7 @@ footer {
         padding: 0;
     }
 
-    .step-description{
+    .step-description {
         font-size: 3vw;
         padding: 1vw;
     }
@@ -878,7 +946,7 @@ footer {
         justify-items: center;
     }
 
-    #nosotros{
+    #nosotros {
         overflow: hidden;
     }
 
