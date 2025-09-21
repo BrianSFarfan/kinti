@@ -389,7 +389,7 @@ footer {
 .art-image {
     max-width: 100%;
     width: 50%;
-    height: auto;
+    height: 100%;
     border-radius: 1vw;
 }
 
@@ -579,7 +579,7 @@ footer {
 .container-macerado {
     margin: 5vh 0 0 0;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/4820817/pexels-photo-4820817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../IMG/F3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
