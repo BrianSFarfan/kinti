@@ -677,6 +677,11 @@ footer {
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1350px) {
+
+    #macerado{
+        overflow: hidden;
+    }
+
     .btn-wsp-flotante {
         font-size: 12vw;
         padding: 1.5vw;
